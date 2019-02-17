@@ -1,0 +1,18 @@
+
+php artisan make:migration create_players_table --create=players
+php artisan make:seeder UsersTableSeeder
+
+php artisan db:seed
+
+php artisan db:seed --class=UsersTableSeeder
+
+composer dump-autoload
+
+
+
+
+Run 
+
+
+1. php artisan migrate
+2. php artisan db:seed
